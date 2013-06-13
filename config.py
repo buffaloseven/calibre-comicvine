@@ -34,7 +34,7 @@ class ConfigWidget(QWidget):
     self.layout.addWidget(self.threads_label)
 
     self.threads_msg = QLineEdit(self)
-    self.threads_msg.setText(PREFS['worker_threads'])
+    self.threads_msg.setText(str(PREFS['worker_threads']))
     self.layout.addWidget(self.threads_msg)
     self.key_label.setBuddy(self.key_msg)
 
